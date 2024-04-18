@@ -6,7 +6,7 @@ function RaceFilter({ setRace }) {
       <select
         onChange={({ target: { value } }) =>
           setRace(
-            value.toLowerCase() == "Choose a type" ? "" : `&race=${value}`
+            value.toLowerCase() == "choose a type" ? "" : `&race=${value}`
           )
         }
       >

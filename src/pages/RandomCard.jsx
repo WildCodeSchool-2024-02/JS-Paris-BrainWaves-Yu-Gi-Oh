@@ -1,5 +1,13 @@
+import { useLoaderData } from "react-router-dom";
+import Card from "../components/Card";
+
 function RandomCard() {
-  return;
+  const { data } = useLoaderData();
+  return (
+    <main>
+      <Card data={data} />
+    </main>
+  );
 }
 
 export default RandomCard;

@@ -1,7 +1,11 @@
 import PropTypes from "prop-types";
 
 function SearchBar({setSearch}) {
-  return <input onInput={(e) => setSearch(e.target.value)} type="text" placeholder="Search"></input>
+  return <input onInput={({ target: { value } }) =>
+          setSearch(
+            value.toLowerCase() !== "" ? `&fname=${value}` : ""
+          )
+        } type="text" placeholder="Search"></input>
 }
 
 SearchBar.propTypes = {
