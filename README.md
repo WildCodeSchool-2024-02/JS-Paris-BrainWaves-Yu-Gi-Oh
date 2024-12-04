@@ -18,7 +18,7 @@ Fait en sorte de n'appeler l'API qu'au montage du composant.
 
 All cards url : https://db.ygoprodeck.com/api/v7/cardinfo.php?num=30&offset=0
 
-**ressources :** [loader](https://reactrouter.com/en/main/route/loader) [useLoaderData](https://reactrouter.com/en/main/hooks/use-loader-data)
+**ressources :** [loader & useLoaderData](https://medium.com/@younusraza909/loaders-in-react-router-71558c2988eb)
 
 ## 2. Liste
 
